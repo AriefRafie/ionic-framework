@@ -310,3 +310,8 @@ ion-accordion-group.accordion-group-expand-inset.md ion-accordion.accordion-expa
 ion-accordion-group.accordion-group-expand-inset.md ion-accordion.accordion-expanded:first-of-type {
   margin-top: 0;
 }
+
+// iOS 15 webkit text alignment issue with date type inputs
+ion-input input::-webkit-date-and-time-value {
+  text-align: start;
+}
